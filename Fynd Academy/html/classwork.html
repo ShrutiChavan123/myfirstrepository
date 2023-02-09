@@ -1,0 +1,20 @@
+<html>
+    <head>
+        <h2>javascript</h2>
+        <p id="test"></p>
+        <script>
+        var x=23;
+        let a=5;
+       var result =x+a;
+       document.getElementById("test").innerHTML=result;
+        </script>
+    </head>
+</html>
+function sayHello() {
+    var say = function() { console.log(hello); }
+    // Local variable that ends up within the closure 
+    var hello = 'Hello, world!';
+    return say;
+  }
+  var sayHelloClosure = sayHello(); 
+  sayHelloClosure(); // ‘Hello, world!’
