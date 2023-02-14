@@ -1,0 +1,16 @@
+<html>
+    <body>
+    <h2>js</h2>
+    <p id="test"></p>
+    <script>
+        let x=10; // let has less scope initiliazation/value cannot be changed/updated.
+        var y=10; //var has global scope that means value can be updated/changed any where in code
+        {
+            let x=22;
+            var y=20;
+        }
+        document.getElementById("test").innerHTML=x;
+        //document.getElementById("test").innerHTML=y;
+    </script>
+    </body>
+</html>

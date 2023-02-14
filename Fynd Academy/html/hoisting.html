@@ -1,11 +1,12 @@
+<!--hoisting is method where initialization is done before declaration-->
 <html>
     <body>
         <p id="demo">
         </p>
         <script>
-            x=5;
+            x=5; //initialization
             ele=document.getElementById("demo");
-            ele.innerHTML=x;
+            ele.innerHTML=x; //declaration
             var x;
         </script>
     </body>
