@@ -1,9 +1,11 @@
 function outerScope(){
-    const res=[];
+    const result=[];
     function innerScope(){
         for (let i=0;i<5;i++){
-            res[i]=(function inner(x){
+            //This is storing execution of inner function
+            result[i]=(function inner(x){
                 return function(){
+                    //additional enclosing context
                     console.log(x);
                 };
             })(i);
